@@ -1,0 +1,56 @@
+.services_main-section {
+    margin:0;
+    width: auto;
+}
+
+.services-wrapper {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    background: rgb(24, 24, 24);
+    transition: 0.1s ease;
+    width:auto;
+    image-rendering: pixelated;
+    position: relative;
+}
+
+.services-wrapper:hover {
+    cursor: pointer;
+    filter: blur(0px);
+    z-index: 1;
+}
+
+.services-wrapper:active  {
+    transform: scale(0.99);
+}
+
+.services-pic {
+    vertical-align: top;
+    width: 100%;
+    transition: ease;
+}
+
+.services-name {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 30px 0 30px 20px;
+    z-index: 1;
+}
+#Advert-wrapper {
+    border: 2px solid #2339ff;
+    background: linear-gradient(#1900a8, #2339ff);
+    box-shadow: 0px 0px 20px #2339ff80;
+}
+#Advert-wrapper:hover {
+    border: 2px solid #5264ff;
+    box-shadow: 0px 0px 20px #2339ff;
+}
+
+@media screen and (max-width: 991px) {
+    .servicesGrid {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+    .services-name {
+        padding: 25px 0 30px 20px;
+    }
+}

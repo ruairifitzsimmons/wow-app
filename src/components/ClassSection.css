@@ -1,0 +1,108 @@
+.class_main-section {
+}
+
+.classsection-container {
+}
+
+.classGrid {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.class-heading {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.class-wrapper {
+    padding: 10px;
+    background: rgb(25, 25, 25);
+    border: 1px solid #be7bfd00;
+}
+
+.class-wrapper:hover {
+    background: rgb(25, 25, 25);
+    cursor: pointer;
+}
+
+.class-header-wrapper {
+    display:inline-flex;
+}
+
+.class-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.class-name {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 0px 0px 10px;
+    transition: 0.2s ease;
+}
+
+.class-spec {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.class-spec:hover {
+    color: #b860ff;
+    cursor: pointer;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+    .classGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:601px) {
+    .classGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+#Warrior {color: #c89d70;}
+#Warrior-wrapper:hover { border-color:#c89d7080;}
+
+#Paladin {color: #f58fbc;}
+#Paladin-wrapper:hover { border-color:#f58fbc80;}
+
+#Hunter {color: #abd473;}
+#Hunter-wrapper:hover { border-color:#abd47380;}
+
+#Rogue {color: #fff56a;}
+#Rogue-wrapper:hover { border-color:#fff56a80;}
+
+#Priest {color: #ffffff;}
+#Priest-wrapper:hover { border-color:#ffffff80;}
+
+#Shaman {color: #0070de;}
+#Shaman-wrapper:hover { border-color:#0070de80;}
+
+#Mage {color: #69ccf0;}
+#Mage-wrapper:hover { border-color:#69ccf080;}
+
+#Warlock {color: #9684ca;}
+#Warlock-wrapper:hover { border-color:#9684ca80;}
+
+#Monk {color: #00ff96;}
+#Monk-wrapper:hover { border-color:#00ff9680;}
+
+#Druid {color: #ff7d0a;}
+#Druid-wrapper:hover { border-color:#ff7d0a80;}
+
+#DemonHunter {color: #a331c9;}
+#DemonHunter-wrapper:hover { border-color:#a331c980;}
+
+#DeathKnight {color: #c41f3b;}
+#DeathKnight-wrapper:hover { border-color:#c41f3b80;}
