@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Button } from './Button';
+import { Button } from '../Buttons/Button';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib';
 

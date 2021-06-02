@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Home from './components/pages/Home/Home';
-import Footer from './components/pages/Footer/Footer';
+import Footer from './components/Footer/Footer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -16,4 +16,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;

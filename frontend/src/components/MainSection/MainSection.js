@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button } from './Button';
+import { Button } from '../Buttons/Button';
 import { Link} from 'react-scroll'
 import './MainSection.css';
+
 
 function MainSection({
     headline,
@@ -9,7 +10,9 @@ function MainSection({
     buttonOne,
     img,
     alt
-}) {
+})
+
+{
     return (
         <>
         <div className='main_main-section'>
@@ -22,6 +25,7 @@ function MainSection({
                         <div className="main_main-text-wrapper">
                             <h1 className='main-heading'>{headline}</h1>
                             <p className='main-subtitle'>{description}</p>
+                            
                             <Link to="contact-container" smooth={true} duration={1000}>
                                 <Button buttonStyle='style-primary' buttonColor="purple" buttonSize='size-auto' arrow='arrow-light'>{buttonOne}</Button>
                             </Link>
