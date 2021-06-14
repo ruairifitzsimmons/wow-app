@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Button } from '../Buttons/Button';
-import './Navbar.css';
+import { Button } from '../components/Button';
+import '../styles/Navbar.css';
 import { IconContext } from 'react-icons/lib';
 
 function Navbar() {
@@ -35,7 +35,7 @@ function Navbar() {
                             {/* Navbar Logo*/}
                             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                                 {/*<img src="images/logo-white.png" alt="Alt" className='navbar-icon'/>*/}
-                                <span className='navbar-name'>SMOKEBOMB</span>
+                                <span className='navbar-name'>SHOCKWAVE</span>
                             </Link>
                             
                             {/* Navbar Menu Toggler */}
@@ -44,23 +44,31 @@ function Navbar() {
                             </div>
 
                             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                                <li className='nav-item'>
-                                    <Link to='services' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
-                                        MENU1
-                                    </Link>
-                                </li>
+                                <div className="dropdown-wrapper">
+                                    <li className='nav-item'>
+                                        <Link to='services' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
+                                            NEWS
+                                        </Link>
+                                    </li>
+                                    <div className="dropdown-content">
+                                        <a href="/patch-notes">PATCH NOTES</a>
+                                    </div>
+                                </div>
 
-                                <li className='nav-item'>
-                                    <Link to='section-two' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
-                                        MENU2
-                                    </Link>
-                                </li>
-
-                                <li className='nav-item' onClick={closeMobileMenu}>
-                                    <a className='nav-links' href="https://www.behance.net/decision3" target="_blank" rel="noreferrer">
-                                        MENU3
-                                    </a>
-                                </li>
+                                <div className="dropdown-wrapper">
+                                    <li className='nav-item'>
+                                        <Link to='services' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
+                                            GUIDES
+                                        </Link>
+                                    </li>
+                                    <div className="dropdown-content">
+                                        <a href="/classes">CLASSES</a>
+                                        <a href="/dungeons">DUNGEONS</a>
+                                        <a href="/raids">RAIDS</a>
+                                        <a href="/battlegrounds">BATTLEGROUNDS</a>
+                                        <a href="/arena">ARENA</a>
+                                    </div>
+                                </div>
 
                                 {/* Contact Button */}
                                 <li className='nav-item'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './DungeonSection.css';
+import '../styles/DungeonSection.css';
 
 function DungeonSection({
     dungeons

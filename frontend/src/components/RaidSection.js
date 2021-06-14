@@ -1,5 +1,5 @@
 import React from 'react';
-import './RaidSection.css';
+import '../styles/RaidSection.css';
 
 function RaidSection({
     raids

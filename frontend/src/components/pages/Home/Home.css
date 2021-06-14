@@ -1,12 +1,12 @@
 .home_main-section {
     max-width: 1080px;
     margin:auto;
+    padding: 10px 20px;
 }
 
 .homeGrid {
     display: grid;
     gap: 5px 5px;
-    padding: 10px;
 }
 
 .grid-item1 {
@@ -57,8 +57,6 @@
     margin: 15px 0px 5px 0px;
 }
 
-
-
 .section-heading {
     color: white;
     font-size: 16px;
@@ -84,8 +82,8 @@
     }
 }
 
-@media screen and (max-width: 601px) {
-    .grid-item6 {
-        
+@media screen and (max-width: 400px) {
+    .home_main-section {
+        padding: 0px;
     }
 }

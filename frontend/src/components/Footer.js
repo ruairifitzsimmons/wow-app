@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import '../styles/Footer.css';
 import { Link } from 'react-router-dom';
 import {
     FaFacebook,
@@ -20,18 +20,6 @@ function Footer() {
                     </div>
                 </section>
 
-                <section className='footer-subscription'>
-                    {/* Header */}
-                    <label htmlFor="email">
-                        <p className='footer-subscription-heading'>
-                            THIS IS THE FOOTER
-                        </p>
-                    </label>
-                    <p className='footer-subscription-text'>
-                        A SMALLER SUBTEXT WOULD GO HERE
-                    </p>
-
-                </section>
 
                 <section className='social-media'>
                     <div className='social-media-wrap'>

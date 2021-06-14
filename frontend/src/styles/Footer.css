@@ -103,8 +103,12 @@
     }
 }
 
-@media screen and (max-width: 360px) {
-    .footer-input {
-        width: 100%;
+@media screen and (max-width: 601px) {
+    .footer-content {
+        padding:0px;
+    }
+
+    .footer-subscription {
+        visibility: hidden;
     }
 }

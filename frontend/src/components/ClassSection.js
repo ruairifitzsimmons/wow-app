@@ -1,10 +1,16 @@
 import React from 'react';
-import './ClassSection.css';
+import { useSelector } from 'react-redux';
+import '../styles/ClassSection.css';
+import { ImpulseSpinner } from 'react-spinners-kit';
+
 
 function ClassSection({
     classes
 }){
+    
+
     return (
+        !classes.length ? <ImpulseSpinner size={30} frontColor="#23aeff"/> : (
         <>
         <div className='class_main-section'>
             <div className="container classsection-container">
@@ -22,15 +28,13 @@ function ClassSection({
                                     </div>
                                 </a>
                             ))}
-                        </div>
-
-{/* {warrior.map((warriorSpec) => (<a className='class-spec' href="*">{warriorSpec}</a>))} */}
-                    
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
         </>
+        )
     )
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './CovenantSection.css';
+import '../styles/CovenantSection.css';
 
 function CovenantSection({
     covenants

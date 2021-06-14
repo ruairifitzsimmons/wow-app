@@ -1,6 +1,7 @@
 .raid_main-section {
     margin:0;
     width: auto;
+    
 }
 
 .raidGrid {
@@ -15,6 +16,7 @@
     filter: saturate(0.6);
     width: auto;
     position: relative;
+    overflow:hidden;
 }
 
 .raid-wrapper:hover {

@@ -20,6 +20,7 @@
     padding: 10px;
     background: rgb(25, 25, 25);
     border: 1px solid #be7bfd00;
+    border-radius: 5px;
 }
 
 .class-wrapper:hover {

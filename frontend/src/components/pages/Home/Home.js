@@ -1,11 +1,12 @@
 import React from 'react';
 import { adOne, homeOne, wowData } from './Data';
-import AdSection from '../../AdSection/AdSection';
-import ClassSection from '../../ClassSection/ClassSection';
-import MainSection from '../../MainSection/MainSection';
-import DungeonSection from '../../DungeonSection/DungeonSection';
-import RaidSection from '../../RaidSection/RaidSection';
-import CovenantSection from '../../CovenantSection/CovenantSection';
+import AdSection from '../../AdSection';
+
+import ClassSection from '../../ClassSection';
+import MainSection from '../../MainSection';
+import DungeonSection from '../../DungeonSection';
+import RaidSection from '../../RaidSection';
+import CovenantSection from '../../CovenantSection';
 
 import './Home.css'
 

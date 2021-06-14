@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from '../Buttons/Button';
+import { Button } from '../components/Button';
 import { Link} from 'react-scroll'
-import './AdSection.css';
+import '../styles/AdSection.css';
 
 function AdSection({
     headline,
