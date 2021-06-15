@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
 
 
 import Navbar from './components/Navbar';
