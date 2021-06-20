@@ -1,7 +1,14 @@
-.class_main-section {
+.class-container {
+    border: 1px solid rgba(122, 122, 122, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    /*box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);*/
 }
 
-.classsection-container {
+.class-header {
+    font-size: 18px;
+    color: white;
+    padding: 0px 0px 5px 0px;
 }
 
 .classGrid {
@@ -10,26 +17,26 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.class-heading {
-    color: white;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
 .class-wrapper {
-    padding: 10px;
-    background: rgb(25, 25, 25);
-    border: 1px solid #be7bfd00;
+    padding: 10px 10px 10px 10px;
     border-radius: 5px;
+    transition: 0.2s ease;
+    border: 1px solid rgba(122, 122, 122, 0.1) !important;
 }
 
 .class-wrapper:hover {
-    background: rgb(25, 25, 25);
     cursor: pointer;
+    border: 1px solid rgba(122, 122, 122, 0.3) !important;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.05);
 }
 
-.class-header-wrapper {
+.class-wrapper:active {
+    transform: scale(0.95);
+}
+
+.class-wrapper-header {
     display:inline-flex;
+    align-items: center;
 }
 
 .class-icon {
@@ -38,16 +45,21 @@
 }
 
 .class-name {
+    padding:0px 0px 0px 5px;
     font-size: 14px;
-    text-transform: uppercase;
-    padding: 10px 0px 0px 10px;
+    /*text-transform: uppercase;*/
     transition: 0.2s ease;
+    color: white;
 }
 
 .class-spec {
+    max-width: fit-content;
     color: white;
     display: block;
     text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s ease;
+    /*text-transform: uppercase;*/
 }
 
 .class-spec:hover {
@@ -71,39 +83,3 @@ a {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-#Warrior {color: #c89d70;}
-#Warrior-wrapper:hover { border-color:#c89d7080;}
-
-#Paladin {color: #f58fbc;}
-#Paladin-wrapper:hover { border-color:#f58fbc80;}
-
-#Hunter {color: #abd473;}
-#Hunter-wrapper:hover { border-color:#abd47380;}
-
-#Rogue {color: #fff56a;}
-#Rogue-wrapper:hover { border-color:#fff56a80;}
-
-#Priest {color: #ffffff;}
-#Priest-wrapper:hover { border-color:#ffffff80;}
-
-#Shaman {color: #0070de;}
-#Shaman-wrapper:hover { border-color:#0070de80;}
-
-#Mage {color: #69ccf0;}
-#Mage-wrapper:hover { border-color:#69ccf080;}
-
-#Warlock {color: #9684ca;}
-#Warlock-wrapper:hover { border-color:#9684ca80;}
-
-#Monk {color: #00ff96;}
-#Monk-wrapper:hover { border-color:#00ff9680;}
-
-#Druid {color: #ff7d0a;}
-#Druid-wrapper:hover { border-color:#ff7d0a80;}
-
-#DemonHunter {color: #a331c9;}
-#DemonHunter-wrapper:hover { border-color:#a331c980;}
-
-#DeathKnight {color: #c41f3b;}
-#DeathKnight-wrapper:hover { border-color:#c41f3b80;}

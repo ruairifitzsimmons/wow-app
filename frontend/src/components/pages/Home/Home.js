@@ -29,17 +29,9 @@ function Home() {
                                 <MainSection {...homeOne}/>
                             </div>
 
-                            <div className="seperator1">
-                                <h1 className="section-heading">Classes</h1>
-                            </div>
-
                             {/* Class Section */}
                             <div className="grid-item3">
                                 <ClassSection {...wowData}/>
-                            </div>
-
-                            <div className="seperator2">
-                                <h1 className="section-heading">Shadowlands</h1>
                             </div>
 
                             {/* Dungeon Section */}
@@ -55,10 +47,6 @@ function Home() {
                             {/* Covenants */}
                             <div className="grid-item6">
                                 <CovenantSection {...wowData}/>
-                            </div>
-
-                            <div className="seperator3">
-                                <h1 className="section-heading">Store</h1>
                             </div>
 
 
