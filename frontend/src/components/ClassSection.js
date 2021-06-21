@@ -9,7 +9,7 @@ export default class ClassSection extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('https://eu-west-1.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/worldofwarcraft-xwrtt/service/worldofwarcraft/incoming_webhook/worldofwarcraft')
+        axios.get('https://eu-west-1.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/worldofwarcraft-xwrtt/service/worldofwarcraft/incoming_webhook/classes')
         .then(res => {
             const classes = res.data;
             this.setState({ classes });

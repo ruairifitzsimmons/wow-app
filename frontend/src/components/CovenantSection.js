@@ -11,7 +11,7 @@ function CovenantSection({
             <div className="container covenant-section-container">
                 <div className="row covenant-row">
                     <div className="col covenant-col">
-
+                    <h1 className='class-header'>Covenants</h1>
                         <div className="covenantGrid">
                             {covenants.map((covenant, i) => (
                                 <a href={`${covenant.replace(/\s+/g, '')}`} key={i}>

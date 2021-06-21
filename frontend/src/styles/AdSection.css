@@ -1,32 +1,25 @@
-.ad_main-section {
-}
-
 .ad_main-text-wrapper {
     background: linear-gradient(#008cff, #00c3ff);
-    padding: 10px;
-    border: 2px solid #00c3ff;
-    box-shadow: 0px 0px 10px #00c3ff;
-    border-radius: 10px;
+    border: 3px solid #00c3ff;
+    box-shadow: 0px 0px 10px #008cff;
+    border-radius: 15px;
+    padding: 20px 30px;
     transition: 0.2s ease;
 }
 
 .ad_main-text-wrapper:hover {
-    border: 2px solid #00c3ff;
-    box-shadow: 0px 0px 25px #00c3ff;
+    border: 3px solid #00c3ff;
+    box-shadow: 0px 0px 30px #008cff;
 }
 
 .ad_main-heading {
     font-size:32px;
-    line-height:0.9;
-    font-weight:600;
     color: rgb(255, 255, 255);
 }
 
 .ad_main-subtitle {
-    font-size:18px;
-    line-height:24px;
+    font-size:14px;
     color: rgb(255, 255, 255);
-    margin-bottom: -20px;
 }
 
 @media screen {

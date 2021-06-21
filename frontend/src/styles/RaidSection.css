@@ -1,31 +1,42 @@
-.raid_main-section {
+.raid-container {
+    border: 1px solid rgba(122, 122, 122, 0.5);
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    background:rgb(45, 42, 58);
+}
+
+.raid-main {
     margin:0;
     width: auto;
-    
 }
 
 .raidGrid {
     display: grid;
     gap: 5px;
-    grid-template-columns: repeat(1);
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px !important;
 }
 
 .raid-wrapper {
-    /*border: 1px solid #be7bfd00;*/
-    transition: ease;
-    filter: saturate(0.6);
-    width: auto;
+    background: rgb(25, 25, 25);
+    height:80px;
+    width:auto;
     position: relative;
-    overflow:hidden;
+    transition: 0.1s ease;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .raid-wrapper:hover {
+    background: rgb(41, 41, 41);
+    z-index: 2;
     cursor: pointer;
-    /*transform: scale(1.02);*/
-    filter: blur(0px);
-    image-rendering:pixelated;
-    filter: saturate(1);
-    filter: brightness(1.2);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.05);
 }
 
 .raid-wrapper:active  {
@@ -33,18 +44,26 @@
 }
 
 .raid-pic {
-    max-height: 100%;
-    overflow: hidden;
+    image-rendering: pixelated;
     vertical-align: top;
     width: 100%;
-    transition: ease;
+    position: relative;
+    transition: 0.2s ease;
+    filter: saturate(0.3);
+}
+
+.raid-wrapper:hover > .raid-pic {
+    transform:scale(1.05);
+    filter: brightness(1.2);
 }
 
 .raid-name {
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    position: absolute;
-    padding: 60px 0 0px 30px;
+    color: rgb(201, 201, 201);
+    font-size: 16px;
+    padding: 0px 0px 0px 20px;
     z-index: 1;
+    position: absolute;
+    margin:0;
+    top: 50%;
+    transform: translateY(-50%);
 }

@@ -23,11 +23,13 @@ export default class ClassSection extends React.Component {
         return (
             !this.state.sl_dungeons.length ? <ImpulseSpinner size={30} frontColor="#23aeff"/> : (
         <>
-        <div className='dungeon_main-section'>
-            <div className="container dungeonsection-container">
-                <div className="row dungeon_main-row">
-                    <div className="col dungeon_main-col">
-                        <div className="dungeonGrid">
+        <div className='dungeon-main'>
+            <div className='dungeon-container'>
+                <div className='dungeon-row'>
+                    <div className='dungeon-col'>
+                        <a className='dungeon-subheader'>Shadowlands</a>
+                        <h1 className='class-header'>Dungeons</h1>
+                        <div className='dungeonGrid'>
                             {this.state.sl_dungeons?.map((slDungeon, i) => (
                                 <div className='dungeon-wrapper' style={{borderColor:slDungeon.color}} key={i}>
                                     <h1 className='dungeon-name'>{slDungeon.name}</h1>

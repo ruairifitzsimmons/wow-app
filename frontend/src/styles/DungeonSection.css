@@ -1,31 +1,45 @@
+.dungeon-container {
+    border: 1px solid rgba(122, 122, 122, 0.5);
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    background:rgb(45, 42, 58);
+}
+
+.dungeon-subheader {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+    padding-left: 10px;
+}
+
 .dungeonGrid {
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr;
+    border: 1px solid transparent;
+    border-radius: 10px !important;
 }
 
 .dungeon-wrapper {
     background: rgb(25, 25, 25);
+    height:60px;
     width:auto;
     position: relative;
     transition: 0.1s ease;
     z-index: 1;
     overflow: hidden;
-    border-radius: 10px;
-    border: 1px solid rgba(122, 122, 122, 0.3) !important;
+    border-radius: 5px;
 }
 
 .dungeon-wrapper:hover {
     background: rgb(41, 41, 41);
     z-index: 2;
     cursor: pointer;
-    border: 1px solid rgba(122, 122, 122, 0.6) !important;
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.05);
 }
 
-.dungeon-wrapper:active  {
-    box-shadow: 0px 0px 30px rgba(0, 195, 255, 0.5);
-    border: 1px solid rgb(0, 195, 255) !important;
+.dungeon-wrapper:active {
+    transform: scale(0.99);
 }
 
 .dungeon-pic {
@@ -34,24 +48,27 @@
     width: 100%;
     position: relative;
     transition: 0.2s ease;
-    filter: brightness(0.8);
-    filter: saturate(0.3)
+    filter: saturate(0.3);
 }
 
 .dungeon-wrapper:hover > .dungeon-pic {
-    transform:scale(1.08);
+    transform:scale(1.05);
     filter: brightness(1.2);
 }
 
 .dungeon-name {
-    color: white;
-    font-size: 14px;
+    color: rgb(201, 201, 201);
+    font-size: 16px;
     padding: 0px 0px 0px 20px;
     z-index: 1;
     position: absolute;
     margin:0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.dungeon-wrapper:hover > .dungeon-name {
+    color: white;
 }
 
 @media screen and (max-width: 991px) {
@@ -68,15 +85,3 @@
         grid-template-columns: 1fr;
     }
 }
-
-/*
-#TheNecroticWake-wrapper:hover {border: 1px solid rgb(0, 255, 42);}
-#SpiresofAscension-wrapper:hover {border: 1px solid rgb(78, 243, 255);}
-#Plaguefall-wrapper:hover {border: 1px solid rgb(179, 255, 0);}
-#TheaterofPain-wrapper:hover {border: 1px solid rgb(3, 122, 83);}
-#MistsofTirnaScithe-wrapper:hover {border: 1px solid rgb(0, 60, 255);}
-#DeOtherSide-wrapper:hover {border: 1px solid rgb(174, 0, 255);}
-#HallsofAtonement-wrapper:hover {border: 1px solid rgb(211, 67, 67);}
-#SanguineDepths-wrapper:hover {border: 1px solid rgb(255, 0, 85);}
-#TazaveshTheVeiledMarket-wrapper:hover {border: 1px solid purple};
-*/
