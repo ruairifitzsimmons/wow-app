@@ -2,23 +2,22 @@
 }
 
 .ad_main-text-wrapper {
-    background: linear-gradient(#1900a8, #2339ff);
+    background: linear-gradient(#008cff, #00c3ff);
     padding: 10px;
-    border: 2px solid #2339ff;
-    box-shadow: 0px 0px 15px #2339ff;
-    border-radius: 5px;
+    border: 2px solid #00c3ff;
+    box-shadow: 0px 0px 10px #00c3ff;
+    border-radius: 10px;
     transition: 0.2s ease;
 }
 
 .ad_main-text-wrapper:hover {
-    border: 2px solid #5264ff;
-    box-shadow: 0px 0px 20px #2339ff;
+    border: 2px solid #00c3ff;
+    box-shadow: 0px 0px 25px #00c3ff;
 }
 
 .ad_main-heading {
     font-size:32px;
     line-height:0.9;
-    letter-spacing: -0.1rem;
     font-weight:600;
     color: rgb(255, 255, 255);
 }

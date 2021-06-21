@@ -35,9 +35,9 @@ export default class ClassSection extends React.Component {
                                             <img className='class-icon' src={wowClass.img}/>
                                             <h1 className='class-name' style={{color:wowClass.color}}>{wowClass.name}</h1>
                                         </div>
-                                        {wowClass?.specs.map((spec, i) => (
+                                        {/*{wowClass?.specs.map((spec, i) => (
                                             <a className='class-spec' key={i}>{spec.spec}</a>
-                                        ))}
+                                        ))}*/}
                                     </div>
                                 ))}
                             </div>
