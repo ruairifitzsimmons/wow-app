@@ -47,26 +47,26 @@ function Navbar() {
                                 <div className="dropdown-wrapper">
                                     <li className='nav-item'>
                                         <Link to='services' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
-                                            NEWS
+                                            News
                                         </Link>
                                     </li>
                                     <div className="dropdown-content">
-                                        <a href="/patch-notes">PATCH NOTES</a>
+                                        <a href="/patch-notes">Patch Notes</a>
                                     </div>
                                 </div>
 
                                 <div className="dropdown-wrapper">
                                     <li className='nav-item'>
                                         <Link to='services' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
-                                            GUIDES
+                                            Guides
                                         </Link>
                                     </li>
                                     <div className="dropdown-content">
-                                        <a href="/classes">CLASSES</a>
-                                        <a href="/dungeons">DUNGEONS</a>
-                                        <a href="/raids">RAIDS</a>
-                                        <a href="/battlegrounds">BATTLEGROUNDS</a>
-                                        <a href="/arena">ARENA</a>
+                                        <a href="/classes">Classes</a>
+                                        <a href="/dungeons">Dungeons</a>
+                                        <a href="/raids">Raids</a>
+                                        <a href="/battlegrounds">Battlegrounds</a>
+                                        <a href="/arena">Arena</a>
                                     </div>
                                 </div>
 
@@ -77,7 +77,7 @@ function Navbar() {
                                             <Button buttonStyle='style-transparent'
                                             buttonSize='size-auto'
                                             arrow='arrow-light'>
-                                                SHOP
+                                                Shop
                                             </Button>
                                         </Link>
                                     ) : (
@@ -86,7 +86,7 @@ function Navbar() {
                                             buttonColor="purple"
                                             buttonSize='size-auto'
                                             arrow='arrow-light'>
-                                                SHOP
+                                                Shop
                                             </Button>
                                         </Link>
                                     )}

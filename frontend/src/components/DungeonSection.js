@@ -3,7 +3,7 @@ import '../styles/DungeonSection.css';
 import { ImpulseSpinner } from 'react-spinners-kit';
 import axios from 'axios';
 
-export default class ClassSection extends React.Component {
+export default class DungeonSection extends React.Component {
     state = {
         sl_dungeons: []
     }

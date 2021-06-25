@@ -1,14 +1,9 @@
 import React from 'react';
-import { Button } from '../components/Button';
-import { Link} from 'react-scroll'
 import '../styles/AdSection.css';
 
 function AdSection({
     headline,
-    description,
-    buttonOne,
-    img,
-    alt
+    description
 }) {
     return (
         <>
@@ -19,9 +14,6 @@ function AdSection({
                         <div className="ad_main-text-wrapper">
                             <h1 className='ad_main-heading'>{headline}</h1>
                             <p className='ad_main-subtitle'>{description}</p>
-                            <Link to="contact-container" smooth={true} duration={1000}>
-                                <Button buttonStyle='style-secondary' buttonSize='size-auto'>{buttonOne}</Button>
-                            </Link>
                         </div>
                     </div>
                 </div>

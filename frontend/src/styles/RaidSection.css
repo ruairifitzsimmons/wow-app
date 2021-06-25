@@ -6,11 +6,6 @@
     background:rgb(45, 42, 58);
 }
 
-.raid-main {
-    margin:0;
-    width: auto;
-}
-
 .raidGrid {
     display: grid;
     gap: 5px;
@@ -66,4 +61,8 @@
     margin:0;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.raid-wrapper:hover > .raid-name {
+    color: white;
 }

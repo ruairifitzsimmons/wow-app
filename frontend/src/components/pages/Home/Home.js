@@ -1,7 +1,7 @@
 import React from 'react';
-import { adOne, homeOne, wowData } from './Data';
-import AdSection from '../../AdSection';
+import { adOne, wowData } from './Data';
 
+import AdSection from '../../AdSection';
 import ClassSection from '../../ClassSection';
 import MainSection from '../../MainSection';
 import DungeonSection from '../../DungeonSection';
@@ -20,32 +20,32 @@ function Home() {
                         <div className="homeGrid">
 
                             {/* Announcement */}
-                            <div className="grid-item1">
+                            <div className="grid-item grid-item1">
                                 <AdSection {...adOne}/>
                             </div>
 
                             {/* Main Content Section */}
-                            <div className="grid-item2">
-                                <MainSection {...homeOne}/>
+                            <div className="grid-item grid-item2">
+                                <MainSection/>
                             </div>
 
                             {/* Class Section */}
-                            <div className="grid-item3">
-                                <ClassSection {...wowData}/>
+                            <div className="grid-item grid-item3">
+                                <ClassSection/>
                             </div>
 
                             {/* Dungeon Section */}
-                            <div className="grid-item4">
-                                <DungeonSection {...wowData}/>
+                            <div className="grid-item grid-item4">
+                                <DungeonSection/>
                             </div>
 
                             {/* Raid Section */}
-                            <div className="grid-item5">
-                                <RaidSection {...wowData}/>
+                            <div className="grid-item grid-item5">
+                                <RaidSection/>
                             </div>
 
                             {/* Covenants */}
-                            <div className="grid-item6">
+                            <div className="grid-item grid-item6">
                                 <CovenantSection {...wowData}/>
                             </div>
 

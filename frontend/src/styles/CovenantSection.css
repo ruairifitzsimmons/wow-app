@@ -1,12 +1,6 @@
-.covenant_main-section {
-    margin:0;
-    width: auto;
-    
-}
-
 .covenantGrid {
     display: grid;
-    gap: 5px;
+    gap: 5px 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
