@@ -58,15 +58,19 @@ function Navbar() {
                                 <div className="dropdown-wrapper">
                                     <li className='nav-item'>
                                         <Link to='services' smooth={true} duration={1000} className='nav-links' onClick={closeMobileMenu}>
-                                            Guides
+                                            Expansions
                                         </Link>
                                     </li>
                                     <div className="dropdown-content">
-                                        <a href="/classes">Classes</a>
-                                        <a href="/dungeons">Dungeons</a>
-                                        <a href="/raids">Raids</a>
-                                        <a href="/battlegrounds">Battlegrounds</a>
-                                        <a href="/arena">Arena</a>
+                                        <a href="/worldofwarcraft">World of Warcraft</a>
+                                        <a href="/theburningcrusade">The Burning Crusade</a>
+                                        <a href="/wrathofthelichking">Wrath of the Lich King</a>
+                                        <a href="/catacylsm">Cataclysm</a>
+                                        <a href="/mistsofpandaria">Mists of Pandaria</a>
+                                        <a href="/warlordsofdraenor">Warlords of Draenor</a>
+                                        <a href="/legion">Legion</a>
+                                        <a href="/battleforazeroth">Battle for Azeroth</a>
+                                        <a href="/shadowlands">Shadowlands</a>
                                     </div>
                                 </div>
 

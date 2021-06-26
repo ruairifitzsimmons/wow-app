@@ -7,10 +7,10 @@ function CovenantSection({
 {
     return (
         <>
-        <div className='covenant_main-section'>
-            <div className="container covenant-section-container">
-                <div className="row covenant-row">
-                    <div className="col covenant-col">
+        <div className='covenant-main'>
+            <div className="covenant-container">
+                <div className="covenant-row">
+                    <div className="covenant-col">
                     <h1 className='class-header'>Covenants</h1>
                         <div className="covenantGrid">
                             {covenants.map((covenant, i) => (

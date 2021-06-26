@@ -20,7 +20,7 @@
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:24px 0;
+    padding:24px 0px;
     color:white;
     margin-left:50px;
     font-weight: 600;
@@ -92,7 +92,7 @@
 
 @media screen and (max-width:992px) {
     .footer-container {
-        padding: 20px 0;
+        padding: 20px 0px;
         flex-direction: column;
     }
     .footer-subscription {

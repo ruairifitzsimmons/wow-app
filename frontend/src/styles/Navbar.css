@@ -4,9 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
     position: static;
     z-index: 999;
+    font-size: 14px;
 }
 
 .navbar-container {
@@ -57,9 +57,9 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #1d1d1db0;
+    background-color: #1d1d1d5b;
     backdrop-filter: blur(3px);
-    min-width: 160px;
+    min-width: 180px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     z-index: 1;
     border: 1px solid #ffffff5d;
@@ -71,12 +71,15 @@
 
 .dropdown-content a {
     color: rgb(255, 255, 255);
-    padding: 4px 0px;
+    padding: 4px 12px;
     text-decoration: none;
     display: block;
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.1s ease;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
 }
 .dropdown-content a:hover {
     background-color: rgb(0, 81, 255);
