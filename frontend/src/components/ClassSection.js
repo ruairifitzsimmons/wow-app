@@ -3,6 +3,7 @@ import '../styles/ClassSection.css';
 import { ImpulseSpinner } from 'react-spinners-kit';
 import axios from 'axios';
 
+
 export default class ClassSection extends React.Component {
     state = {
         classes: []
@@ -30,14 +31,16 @@ export default class ClassSection extends React.Component {
                             <h1 className='class-header'>Classes</h1>
                             <div className='classGrid'>
                                 {this.state.classes?.map((wowClass, i) => (
-                                    <div className='class-wrapper' style={{borderColor:wowClass.color}} key={i}>
+                                        <div className='class-wrapper' key={i} >
+                                            <a href='/classes'>
                                         <div className='class-wrapper-header'>
                                             <img className='class-icon' src={wowClass.img}/>
-                                            <h1 className='class-name' style={{color:wowClass.color}}>{wowClass.name}</h1>
+                                            <span className='class-tooltiptext'>{wowClass.name}</span>
                                         </div>
                                         {/*{wowClass?.specs.map((spec, i) => (
                                             <a className='class-spec' key={i}>{spec.spec}</a>
                                         ))}*/}
+                                        </a>
                                     </div>
                                 ))}
                             </div>
